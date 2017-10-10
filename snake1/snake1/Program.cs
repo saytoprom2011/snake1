@@ -9,60 +9,67 @@ namespace snake1
     {
         static void Main(string[] args)
         {
-            int x = 1;
-            Func1(x);
-            Console.WriteLine( "Call Func1. x = " + x );
 
-            x = 1;
-            Func2(x);
-            Console.WriteLine( "Call Func2. x = " + x );
 
-            x = 1;
-            Func3(x);
-            Console.WriteLine("Call Func3. x = " + x);
+            List<int> numList = new List<int>();
+            numList.Add(0);
+            numList.Add(1);
+            numList.Add(2);
+            numList.Add(3);
 
-            Point p1 = new Point(1, 3, '*');
-            Move(p1, 10, 10);
-            Console.WriteLine("Call Move. p1.x = " + p1.x + ", p1.y = " + p1.y);
+            foreach (int i in numList)
+            {
+                Console.WriteLine(i);
+            }
 
-            Point p2 = new Point(4, 5, '#');
-            p1 = p2;
-            p2.x = 8;
-            p2.y = 8;
-            Console.WriteLine("p1 = p2. p1.x = " + p1.x + "p1.y = " + p1.y + ", p2.x = " + p2.x + ", p2.y = " + p2.y);
+            numList.RemoveAt(0);
 
-            p1 = new Point(1, 1, '*');
-            Update(p1);
-            Console.WriteLine("Call Update. p1.x = " + p1.x + ", p1.y = " + p1.y);
+            List<char> myNameList = new List<char>();
+            myNameList.Add('A');
+            myNameList.Add('B');
+            myNameList.Add('C');
+            myNameList.Add('D');
 
+            foreach (char i in myNameList)
+            {
+                Console.WriteLine(i);
+            }
+
+            List<char> charList = new List<char>();
+            charList.Add('@');
+            charList.Add('#');
+            charList.Add('$');
+            charList.Add('%');
+            charList.Add('&');
+            charList.Add('*');
+
+            foreach (char c in charList)
+            {
+                Console.WriteLine(c);
+            }
+
+
+            Point p1 = new Point(1, 7, '*');
+            Point p2 = new Point(4, 9, '#');
+            Point p3 = new Point(8, 10, '&');
+            Point p4 = new Point(6, 8, '%');
+            Point p5 = new Point(4, 12, '$');
+            Point p6 = new Point(6, 10, '@');
+
+            List<Point> pList = new List<Point>();
+            pList.Add(p1);
+            pList.Add(p2);
+            pList.Add(p3);
+            pList.Add(p4);
+            pList.Add(p5);
+            pList.Add(p6);
+
+            foreach (Point p in pList)
+            {
+                p.Draw();
+            }
 
             Console.ReadLine();
-        }
-
-        public static void Func1(int value)
-        {
-
-        }
-
-        public static void Func2(int value)
-        {
-            value = value + 1;
-        }
-
-        public static void Func3(int x)
-        {
-            x = x + 1;
-        }
-
-        public static void Move(Point p, int dx, int dy)
-        {
-            p.x = p.x + dx;
-            p.y = p.y + dy;
-        }
-
-        public static void Update(Point p)
-        {
-            p = new Point();
         }
 
     }
