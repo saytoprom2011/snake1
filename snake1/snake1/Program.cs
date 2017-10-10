@@ -49,12 +49,12 @@ namespace snake1
             }
 
 
-            Point p1 = new Point(1, 7, '*');
-            Point p2 = new Point(4, 9, '#');
-            Point p3 = new Point(8, 10, '&');
-            Point p4 = new Point(6, 8, '%');
-            Point p5 = new Point(4, 12, '$');
-            Point p6 = new Point(6, 10, '@');
+            Point p1 = new Point(3, 3, '*');
+            Point p2 = new Point(4, 4, '#');
+            Point p3 = new Point(5, 5, '&');
+            Point p4 = new Point(6, 6, '%');
+            Point p5 = new Point(7, 7, '$');
+            Point p6 = new Point(8, 8, '@');
 
             List<Point> pList = new List<Point>();
             pList.Add(p1);
