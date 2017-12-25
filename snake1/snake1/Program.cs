@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace snake1
+namespace snake
 {
     class Program
     {
@@ -29,8 +29,9 @@ namespace snake1
             lineV.DrowV();*/
 
             // Отрисовка точек
-            Point p = new Point(4, 5, '*');
-            p.Draw();
+            Point p = new Point(4, 5, '#');
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+            snake.Drow();
 
             Console.ReadLine();
         }
