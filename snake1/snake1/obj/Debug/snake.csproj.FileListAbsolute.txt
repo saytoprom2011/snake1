@@ -1,0 +1,6 @@
+D:\GitCode\snake1\Snake1\snake1\obj\Debug\snake.csproj.CoreCompileInputs.cache
+D:\GitCode\snake1\Snake1\snake1\bin\Debug\snake.exe
+D:\GitCode\snake1\Snake1\snake1\bin\Debug\snake.pdb
+D:\GitCode\snake1\Snake1\snake1\obj\Debug\snake.exe
+D:\GitCode\snake1\Snake1\snake1\obj\Debug\snake.pdb
+D:\GitCode\snake1\Snake1\snake1\obj\Debug\snake.csprojResolveAssemblyReference.cache
